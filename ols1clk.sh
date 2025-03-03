@@ -422,7 +422,7 @@ function check_memory
 {
     if [ "${OSNAMEVER}" = 'CENTOS9' ]; then
         get_memory
-        if [ "$RAM_KB" -lt "800000" ]; then
+        if [ "$RAM_KB" -lt "1024" ]; then
             echoR 'remi package needs at least 2GB RAM to install it. Exit!'
             exit 1
         fi
